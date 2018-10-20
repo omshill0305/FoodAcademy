@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">FoodAcademyv2</string>
+    <string name="app_name">FoodAcademy</string>
     <string name="title_activity_home">Food Academy</string>
     <string name="title_about">Über uns</string>
     <string name="title_events">Events</string>
