@@ -7,16 +7,6 @@
     android:layout_height="match_parent"
     tools:context=".HomeActivity">
 
-    <TextView
-        android:id="@+id/message"
-        android:layout_width="230dp"
-        android:layout_height="128dp"
-        android:layout_marginLeft="@dimen/activity_horizontal_margin"
-        android:layout_marginTop="@dimen/activity_vertical_margin"
-        android:textSize="30sp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/navigation"
         android:layout_width="0dp"
@@ -26,15 +16,42 @@
         app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:menu="@menu/navigation" />
+        app:menu="@menu/navigation" >
+
+    </android.support.design.widget.BottomNavigationView>
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/welcome_text"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/background"
-    app:layout_constraintStart_toStartOf="parent"
-    tools:context=".MainActivity"></RelativeLayout>
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/welcome_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".MainActivity">
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="cursive"
+        android:lineSpacingExtra="8sp"
+        android:text="@string/titel_message"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </android.support.constraint.ConstraintLayout>

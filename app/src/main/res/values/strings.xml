@@ -6,4 +6,10 @@
     <string name="title_buchen">Buchen</string>
     <string name="title_route">Route</string>
     <string name="title_more">Mehr</string>
+    <string name= "titel_message">
+Herzlich willkommen in unserem Restaurant! Wir wünschen uns,
+dass Sie sich wohl fühlen und Speis und Trank in Ruhe genießen.
+Bei einem guten Getränk und liebevoll frisch zubereitetem Essen
+gelingt es Ihnen sicherlich, Ihren Tag gemütlich in unserem
+Restaurant ausklingen zu lassen. </string>
 </resources>
