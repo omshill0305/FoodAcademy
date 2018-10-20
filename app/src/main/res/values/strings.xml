@@ -1,7 +1,9 @@
 <resources>
     <string name="app_name">FoodAcademyv2</string>
-    <string name="title_activity_home">HomeActivity</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_home">Food Academy</string>
+    <string name="title_about">Über uns</string>
+    <string name="title_events">Events</string>
+    <string name="title_buchen">Buchen</string>
+    <string name="title_route">Route</string>
+    <string name="title_more">Mehr</string>
 </resources>
