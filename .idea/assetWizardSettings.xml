@@ -35,7 +35,7 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="paddingPercent" value="5" />
+                                                <entry key="trimmed" value="true" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -48,7 +48,7 @@
                                       <entry key="assetType" value="IMAGE" />
                                       <entry key="backgroundColor" value="3aaa35" />
                                       <entry key="cropped" value="true" />
-                                      <entry key="imageAsset" value="$USER_HOME$/Downloads/sources/logoIcon.png" />
+                                      <entry key="imageAsset" value="$USER_HOME$/Downloads/sources/logo1.png" />
                                       <entry key="outputName" value="ic_launcher_logo_icon" />
                                     </map>
                                   </option>
