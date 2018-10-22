@@ -24,7 +24,7 @@ public class HomeActivity extends AppCompatActivity {
                     mTextMessage.setText(R.string.title_events);
                     return true;
                 case R.id.navigation_buchen:
-                    mTextMessage.setText(R.string.title_buchen);
+                    mTextMessage.setText(R.string.title_book_text);
                     return true;
                 case R.id.navigation_route:
                     mTextMessage.setText(R.string.title_route);

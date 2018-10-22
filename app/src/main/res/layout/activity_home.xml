@@ -36,13 +36,13 @@
 
     <TextView
         android:id="@+id/message"
-        android:layout_width="310dp"
-        android:layout_height="412dp"
+        android:layout_width="0dp"
+        android:layout_height="429dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="8dp"
         android:fontFamily="cursive"
@@ -54,8 +54,9 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/welcome_text"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.049" />
 
 </android.support.constraint.ConstraintLayout>
