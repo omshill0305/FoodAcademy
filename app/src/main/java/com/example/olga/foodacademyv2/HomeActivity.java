@@ -18,7 +18,7 @@ public class HomeActivity extends AppCompatActivity {
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
                 case R.id.navigation_about:
-                    mTextMessage.setText(R.string.title_about);
+                    mTextMessage.setText(R.string.titel_message);
                     return true;
                 case R.id.navigation_events:
                     mTextMessage.setText(R.string.title_events);
