@@ -12,7 +12,6 @@
         android:layout_height="56dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-
         app:itemTextColor="@color/designText"
         app:menu="@menu/nav_items"></android.support.design.widget.BottomNavigationView>
 
@@ -25,23 +24,9 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="0dp"
         android:layout_marginTop="0dp"
-        android:layout_marginBottom="0dp"
-        android:background="@drawable/background">
+        android:layout_marginBottom="0dp">
 
-        <TextView
-            android:id="@+id/welcome_text"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="30dp"
-            android:layout_marginEnd="24dp"
-            android:fontFamily="sans-serif-condensed"
-            android:lineSpacingExtra="8sp"
-            android:text="@string/titel_message"
-            android:textAlignment="center"
-            android:textColor="@color/colorAccent"
-            android:textSize="24sp"
-            android:textStyle="italic" />
+
     </FrameLayout>
 
 </RelativeLayout>

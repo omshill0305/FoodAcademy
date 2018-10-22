@@ -14,4 +14,12 @@
         android:id="@+id/nav_book"
         android:icon="@drawable/ic_stat_booking"
         android:title="@string/title_buchen" />
+    <item
+        android:id="@+id/nav_route"
+        android:icon="@drawable/ic_stat_route"
+        android:title="@string/title_route" />
+    <item
+        android:id="@+id/nav_more"
+        android:icon="@drawable/ic_stat_more"
+        android:title="@string/title_more" />
 </menu>

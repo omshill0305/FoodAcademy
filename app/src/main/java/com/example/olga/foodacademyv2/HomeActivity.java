@@ -16,6 +16,8 @@ public class HomeActivity extends AppCompatActivity {
     private AboutFragment aboutFragment;
     private BookFragment bookFragment;
     private EventsFragment eventsFragment;
+    private RouteFragment routeFragment;
+    private MoreFragment moreFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +31,8 @@ public class HomeActivity extends AppCompatActivity {
         aboutFragment = new AboutFragment();
         eventsFragment = new EventsFragment();
         bookFragment = new BookFragment();
+        routeFragment = new RouteFragment();
+        moreFragment = new MoreFragment();
 
 
         mMainNav.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -46,6 +50,16 @@ public class HomeActivity extends AppCompatActivity {
                     case R.id.nav_events:
                         //mMainNav.setItemBackgroundResource(R.color.colorAccent);
                         setFragment(eventsFragment);
+                        return true;
+
+                    case R.id.nav_route:
+                        //mMainNav.setItemBackgroundResource(R.color.colorAccent);
+                        setFragment(routeFragment);
+                        return true;
+
+                    case R.id.nav_more:
+                        //mMainNav.setItemBackgroundResource(R.color.colorAccent);
+                        setFragment(moreFragment);
                         return true;
 
                     default:
