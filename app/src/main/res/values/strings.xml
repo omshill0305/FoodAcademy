@@ -14,7 +14,14 @@ Bei einem guten Getränk und liebevoll frisch zubereitetem Essen
 gelingt es Ihnen sicherlich, Ihren Tag gemütlich in unserem
 Restaurant ausklingen zu lassen. </string>
     <string name="title_book_text"> Tischreservierung </string>
-
+    <string name="dateET">Datum</string>
+    <string name="timeET">Zeit</string>
+    <string name="vornameET">Vorname</string>
+    <string name="nachnameET">Nachname</string>
+    <string name="anzahlET">"Anzahl Personen"</string>
+    <string name="emailET">E-Mail</string>
+    <string name="telefonET">Telefon/ Handy</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="bookButton">Anfrage senden</string>
 </resources>
