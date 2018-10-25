@@ -4,7 +4,8 @@
     <string name="title_about">Über uns</string>
     <string name="title_events">Events</string>
     <string name="title_buchen">Buchen</string>
-    <string name="title_route">Route</string>
+    <string name="title_open">Open</string>
+    <string name="title_offnungszeiten">Öffnungszeiten</string>
     <string name="title_more">Mehr</string>
 
     <string name="titel_message">
@@ -38,5 +39,13 @@ Restaurant ausklingen zu lassen. </string>
     <string name="herbst_date">3 November Samstag</string>
     <string name="disco_date">9 November Freitag</string>
     <string name="party_date">10 November Freitag</string>
+
+    //Öffnunszeiten
+
+    Mo – Fr 12h – 23h
+    Sa – So 12:30h – 23h
+
+    //Mehr
+
 
 </resources>

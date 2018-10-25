@@ -15,7 +15,7 @@
         android:layout_marginBottom="431dp"
         android:fontFamily="cursive"
         android:lineSpacingExtra="8sp"
-        android:text="@string/title_route"
+        android:text="@string/title_offnungszeiten"
         android:textAlignment="center"
         android:textColor="@color/colorAccent"
         android:textSize="30sp"
@@ -25,5 +25,115 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.20" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="270dp"
+        android:layout_height="214dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcome_text"
+        app:layout_constraintVertical_bias="0.26">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="30dip"
+                android:layout_height="30dip"
+                android:src="@mipmap/ic_launcher_logo_icon"
+                tools:layout_editor_absoluteX="64dp"
+                tools:layout_editor_absoluteY="102dp" />
+
+            <TextView
+                android:id="@+id/montag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="monospace"
+                android:lineSpacingExtra="10sp"
+                android:paddingStart="16dp"
+                android:text=" Montag - Freitag"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="monospace"
+            android:lineSpacingExtra="10sp"
+            android:paddingStart="64dp"
+            android:text="12h - 23h"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="30dip"
+                android:layout_height="30dip"
+                android:src="@mipmap/ic_launcher_logo_icon"
+                tools:layout_editor_absoluteX="64dp"
+                tools:layout_editor_absoluteY="102dp" />
+
+            <TextView
+                android:id="@+id/dienstag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="monospace"
+                android:lineSpacingExtra="10sp"
+                android:paddingStart="16dp"
+                android:text="Samstag - Sonntag"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="monospace"
+            android:lineSpacingExtra="10sp"
+            android:paddingStart="64dp"
+            android:text="12:30h - 23h"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="82dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/for_zeit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.18" />
 
 </android.support.constraint.ConstraintLayout>
