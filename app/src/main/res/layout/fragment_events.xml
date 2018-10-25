@@ -29,22 +29,24 @@
     <ScrollView
         android:id="@+id/scrollView3"
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="419dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="4dp"
         android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/welcome_text">
+        app:layout_constraintTop_toBottomOf="@+id/welcome_text"
+        app:layout_constraintVertical_bias="0.32">
 
 
         <LinearLayout
             android:id="@+id/layoutGallery"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:background="@color/colorAccent">
+            android:background="@color/colorAccent"
+            android:orientation="vertical">
 
             <LinearLayout
                 android:id="@+id/event1"
@@ -67,13 +69,14 @@
                     android:text="@string/halloween_date"
                     android:textAlignment="center"
                     android:textColor="@color/designText"
-                    android:textSize="18sp"
+                    android:textSize="14sp"
                     android:textStyle="bold" />
 
                 <ImageView
                     android:id="@+id/halloweenPic"
                     android:layout_width="250dp"
                     android:layout_height="match_parent"
+                    android:layout_marginEnd="8dp"
                     android:contentDescription="@string/halloween"
                     android:scaleType="fitXY"
                     android:src="@drawable/halloween" />
@@ -100,50 +103,52 @@
                     android:text="@string/jazz_date"
                     android:textAlignment="center"
                     android:textColor="@color/designText"
-                    android:textSize="18sp"
+                    android:textSize="14sp"
                     android:textStyle="bold" />
 
                 <ImageView
                     android:id="@+id/jazzPic"
                     android:layout_width="250dp"
                     android:layout_height="match_parent"
+                    android:layout_marginEnd="8dp"
                     android:contentDescription="@string/jazz"
                     android:scaleType="fitXY"
                     android:src="@drawable/jazz" />
             </LinearLayout>
 
             <LinearLayout
-            android:id="@+id/event3"
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:orientation="horizontal"
-            android:paddingTop="8dp"
-            android:paddingBottom="8dp">
+                android:id="@+id/event3"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="horizontal"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp">
 
-            <TextView
-                android:id="@+id/herbst"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_marginStart="8dp"
-                android:layout_marginEnd="8dp"
-                android:layout_weight="2"
-                android:background="@drawable/events_background"
-                android:fontFamily="cursive"
-                android:paddingTop="50dp"
-                android:text="@string/herbst_date"
-                android:textAlignment="center"
-                android:textColor="@color/designText"
-                android:textSize="18sp"
-                android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/herbst"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/events_background"
+                    android:fontFamily="cursive"
+                    android:paddingTop="50dp"
+                    android:text="@string/herbst_date"
+                    android:textAlignment="center"
+                    android:textColor="@color/designText"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
 
-            <ImageView
-                android:id="@+id/herbstPic"
-                android:layout_width="250dp"
-                android:layout_height="match_parent"
-                android:contentDescription="@string/herbst"
-                android:scaleType="fitXY"
-                android:src="@drawable/herbst" />
-        </LinearLayout>
+                <ImageView
+                    android:id="@+id/herbstPic"
+                    android:layout_width="250dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="8dp"
+                    android:contentDescription="@string/herbst"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/herbst" />
+            </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/event4"
@@ -166,13 +171,14 @@
                     android:text="@string/disco_date"
                     android:textAlignment="center"
                     android:textColor="@color/designText"
-                    android:textSize="18sp"
+                    android:textSize="14sp"
                     android:textStyle="bold" />
 
                 <ImageView
                     android:id="@+id/discoPic"
                     android:layout_width="250dp"
                     android:layout_height="match_parent"
+                    android:layout_marginEnd="8dp"
                     android:contentDescription="@string/disco"
                     android:scaleType="fitXY"
                     android:src="@drawable/disco" />
@@ -199,13 +205,14 @@
                     android:text="@string/party_date"
                     android:textAlignment="center"
                     android:textColor="@color/designText"
-                    android:textSize="18sp"
+                    android:textSize="14sp"
                     android:textStyle="bold" />
 
                 <ImageView
                     android:id="@+id/partyPic"
                     android:layout_width="250dp"
                     android:layout_height="match_parent"
+                    android:layout_marginEnd="8dp"
                     android:contentDescription="@string/party"
                     android:scaleType="fitXY"
                     android:src="@drawable/party" />
