@@ -35,7 +35,7 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="color" value="3aaa35" />
+                                                <entry key="color" value="ffffff" />
                                                 <entry key="trimmed" value="true" />
                                               </map>
                                             </option>
@@ -47,7 +47,7 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="url" value="jar:file:/Applications/Android%20Studio.app/Contents/plugins/android/lib/android.jar!/images/material_design_icons/maps/ic_restaurant_menu_black_24dp.xml" />
+                                                <entry key="url" value="jar:file:/Applications/Android%20Studio.app/Contents/plugins/android/lib/android.jar!/images/material_design_icons/communication/ic_import_contacts_black_24dp.xml" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -69,11 +69,10 @@
                                   </option>
                                   <option name="values">
                                     <map>
-                                      <entry key="assetType" value="IMAGE" />
                                       <entry key="cropped" value="true" />
                                       <entry key="iconShape" value="NONE" />
                                       <entry key="imageAsset" value="$USER_HOME$/Downloads/sources/logo1.png" />
-                                      <entry key="outputName" value="ic_launcher_logo" />
+                                      <entry key="outputName" value="ic_stat_menu" />
                                     </map>
                                   </option>
                                 </PersistentState>

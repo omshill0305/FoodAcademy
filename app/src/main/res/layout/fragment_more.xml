@@ -37,7 +37,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/welcome_text">
+        app:layout_constraintTop_toBottomOf="@+id/welcome_text"
+        app:layout_constraintVertical_bias="0.13999999">
 
         <LinearLayout
             android:id="@+id/galerie"
@@ -51,7 +52,7 @@
                 android:layout_height="40dip"
                 android:src="@android:drawable/ic_menu_gallery" />
 
-            <EditText
+            <TextView
                 android:id="@+id/editText"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -75,12 +76,13 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:id="@+id/imageView1"
-                android:layout_width="40dip"
-                android:layout_height="40dip"
-                android:src="@android:drawable/ic_menu_gallery" />
+                android:id="@+id/imageView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@mipmap/ic_stat_menu" />
 
-            <EditText
+            <TextView
                 android:id="@+id/editText1"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -109,7 +111,7 @@
                 android:layout_height="40dip"
                 android:src="@android:drawable/ic_menu_gallery" />
 
-            <EditText
+            <TextView
                 android:id="@+id/editText2"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -138,7 +140,7 @@
                 android:layout_height="40dip"
                 android:src="@android:drawable/ic_menu_gallery" />
 
-            <EditText
+            <TextView
                 android:id="@+id/editText3"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -152,8 +154,34 @@
                 android:textColor="@color/colorAccent"
                 android:textSize="24sp"
                 android:textStyle="bold" />
+        </LinearLayout>
 
+        <LinearLayout
+            android:id="@+id/anrufen"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
 
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:src="@android:drawable/ic_menu_gallery" />
+
+            <TextView
+                android:id="@+id/editText4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:fontFamily="cursive"
+                android:inputType="textPersonName"
+                android:paddingStart="8dp"
+                android:singleLine="false"
+                android:text="Uns anrufen"
+                android:textColor="@color/colorAccent"
+                android:textSize="24sp"
+                android:textStyle="bold" />
         </LinearLayout>
 
     </LinearLayout>
