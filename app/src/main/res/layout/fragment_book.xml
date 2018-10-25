@@ -89,7 +89,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
         app:layout_constraintVertical_bias="0.05"
-        android:paddingStart="8dp"/>
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"/>
 
     <EditText
         android:id="@+id/nachnameET"
@@ -105,6 +106,7 @@
         android:hint="@string/nachnameET"
         android:inputType="textPersonName"
         android:paddingStart="8dp"
+        android:paddingEnd="8dp"
         android:textAlignment="textStart"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -127,6 +129,7 @@
         android:hint="@string/anzahlET"
         android:inputType="numberSigned"
         android:paddingStart="8dp"
+        android:paddingEnd="8dp"
         android:textAlignment="textStart"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -153,7 +156,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/personenET"
         app:layout_constraintVertical_bias="0.05"
-        android:paddingStart="8dp"/>
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"/>
 
     <EditText
         android:id="@+id/phoneET"
@@ -169,6 +173,7 @@
         android:hint="@string/telefonET"
         android:inputType="phone"
         android:paddingStart="8dp"
+        android:paddingEnd="8dp"
         android:textAlignment="textStart"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

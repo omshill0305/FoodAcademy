@@ -24,4 +24,7 @@ Restaurant ausklingen zu lassen. </string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="bookButton">Anfrage senden</string>
+    <string name="halloween">31 October Mittwoch</string>
+    <string name="jazz_text">2 November Freitag</string>
+    <string name="jazz">Jazz</string>
 </resources>
