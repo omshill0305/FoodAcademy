@@ -13,10 +13,10 @@ public class HomeActivity extends AppCompatActivity {
 
     private BottomNavigationView mMainNav;
     private FrameLayout mMainFrame;
-    private AboutFragment aboutFragment;
+    private WelcomeFragment welcomeFragment;
     private BookFragment bookFragment;
     private EventsFragment eventsFragment;
-    private RouteFragment routeFragment;
+    private OpenFragment openFragment;
     private MoreFragment moreFragment;
 
     @Override
@@ -28,10 +28,10 @@ public class HomeActivity extends AppCompatActivity {
         mMainFrame = (FrameLayout) findViewById(R.id.main_frame);
         mMainNav = (BottomNavigationView) findViewById(R.id.main_nav);
 
-        aboutFragment = new AboutFragment();
+        welcomeFragment = new WelcomeFragment();
         eventsFragment = new EventsFragment();
         bookFragment = new BookFragment();
-        routeFragment = new RouteFragment();
+        openFragment = new OpenFragment();
         moreFragment = new MoreFragment();
 
 
@@ -41,7 +41,7 @@ public class HomeActivity extends AppCompatActivity {
                 switch (item.getItemId()){
                     case R.id.nav_about:
                         //mMainNav.setItemIconTint(R.color.colorAccent);
-                        setFragment(aboutFragment);
+                        setFragment(welcomeFragment);
                         return true;
                     case R.id.nav_book:
                         //mMainNav.setItemBackgroundResource(R.color.colorAccent);
@@ -54,7 +54,7 @@ public class HomeActivity extends AppCompatActivity {
 
                     case R.id.nav_route:
                         //mMainNav.setItemBackgroundResource(R.color.colorAccent);
-                        setFragment(routeFragment);
+                        setFragment(openFragment);
                         return true;
 
                     case R.id.nav_more:

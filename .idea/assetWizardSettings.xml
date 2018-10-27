@@ -13,12 +13,42 @@
                       <PersistentState>
                         <option name="children">
                           <map>
-                            <entry key="launcher">
+                            <entry key="actionbar">
                               <value>
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="foregroundImage" value="$USER_HOME$/Downloads/sources/wir.png" />
+                                      <entry key="assetType" value="IMAGE" />
+                                      <entry key="imageAsset" value="$USER_HOME$/Downloads/sources/open.png" />
+                                      <entry key="outputName" value="ic_satat_welcome" />
+                                      <entry key="theme" value="CUSTOM" />
+                                    </map>
+                                  </option>
+                                </PersistentState>
+                              </value>
+                            </entry>
+                            <entry key="launcher">
+                              <value>
+                                <PersistentState>
+                                  <option name="children">
+                                    <map>
+                                      <entry key="foregroundImage">
+                                        <value>
+                                          <PersistentState>
+                                            <option name="values">
+                                              <map>
+                                                <entry key="scalingPercent" value="88" />
+                                              </map>
+                                            </option>
+                                          </PersistentState>
+                                        </value>
+                                      </entry>
+                                    </map>
+                                  </option>
+                                  <option name="values">
+                                    <map>
+                                      <entry key="foregroundAssetType" value="CLIP_ART" />
+                                      <entry key="foregroundImage" value="$USER_HOME$/Downloads/sources/welcome.png" />
                                       <entry key="foregroundLayerName" value="ic_launcher_about" />
                                     </map>
                                   </option>
@@ -47,7 +77,7 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="url" value="jar:file:/Applications/Android%20Studio.app/Contents/plugins/android/lib/android.jar!/images/material_design_icons/communication/ic_import_contacts_black_24dp.xml" />
+                                                <entry key="url" value="jar:file:/Applications/Android%20Studio.app/Contents/plugins/android/lib/android.jar!/images/material_design_icons/maps/ic_local_phone_black_24dp.xml" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -58,7 +88,7 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="paddingPercent" value="15" />
+                                                <entry key="paddingPercent" value="5" />
                                                 <entry key="trimmed" value="true" />
                                               </map>
                                             </option>
@@ -71,8 +101,8 @@
                                     <map>
                                       <entry key="cropped" value="true" />
                                       <entry key="iconShape" value="NONE" />
-                                      <entry key="imageAsset" value="$USER_HOME$/Downloads/sources/logo1.png" />
-                                      <entry key="outputName" value="ic_stat_menu" />
+                                      <entry key="imageAsset" value="$USER_HOME$/Downloads/sources/wir.png" />
+                                      <entry key="outputName" value="ic_stat_call" />
                                     </map>
                                   </option>
                                 </PersistentState>

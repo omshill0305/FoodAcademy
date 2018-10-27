@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">FoodAcademy</string>
     <string name="title_activity_home">Food Academy</string>
-    <string name="title_about">Über uns</string>
+    <string name="title_about">Welcome</string>
     <string name="title_events">Events</string>
     <string name="title_buchen">Buchen</string>
     <string name="title_open">Open</string>
@@ -42,10 +42,19 @@ Restaurant ausklingen zu lassen. </string>
 
     //Öffnunszeiten
 
-    Mo – Fr 12h – 23h
-    Sa – So 12:30h – 23h
+    <string name="montag">Montag - Donnerstag</string>
+    <string name="freitag">Freitag - Samstag</string>
+    <string name="sonntag">Sonntag</string>
+    <string name="timeq">12h - 23h</string>
+    <string name="time2">12:30h - 23h</string>
+    <string name="time3">13h - 22:30h</string>
 
     //Mehr
+    <string name="gallery"><u>Galerie</u></string>
+    <string name="menu"><u>Speisekarte</u></string>
+    <string name="feedback"><u>Bewertung schreiben</u></string>
+    <string name="route"><u>Uns finden</u></string>
+    <string name="about"><u>Über uns</u></string>
 
 
 </resources>
