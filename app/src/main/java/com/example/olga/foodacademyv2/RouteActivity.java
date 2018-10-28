@@ -1,5 +1,10 @@
 package com.example.olga.foodacademyv2;
 
+import android.Manifest;
+import android.annotation.SuppressLint;
+import android.content.pm.PackageManager;
+import android.support.annotation.NonNull;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 
@@ -13,6 +18,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 public class RouteActivity extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
+    private static final int LOCATION_REQUEST = 500;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,12 +43,28 @@ public class RouteActivity extends FragmentActivity implements OnMapReadyCallbac
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
+        mMap.getUiSettings().setZoomControlsEnabled(true);
 
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(this, new String[] {Manifest.permission.ACCESS_FINE_LOCATION}, LOCATION_REQUEST);
+            return;
+        }
+        mMap.setMyLocationEnabled(true);
 
 
 
         LatLng restaurant = new LatLng(52.4921794, 13.2931579);
         mMap.addMarker(new MarkerOptions().position(restaurant).title("FoodAcademy"));
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(restaurant, 15));
+    }
+    @SuppressLint("MissingPermission")
+    public void onRequetPermissionsResult(int requestCode, @NonNull String[] permission, @NonNull int [] grantResults){
+        switch (requestCode){
+            case LOCATION_REQUEST:
+               if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED){
+                   mMap.setMyLocationEnabled(true);
+               }
+               break;
+        }
     }
 }
