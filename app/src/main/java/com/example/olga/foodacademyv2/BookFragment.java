@@ -32,9 +32,10 @@ public class BookFragment extends Fragment {
         bt_send.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                System.out.println("Hi its me");
+
                 EditText date = (EditText) rootView.findViewById(R.id.dateTE);
                 Log.i("Datum", date.getText().toString());
+                System.out.println("Hi its me");
             }
         });
         return rootView;

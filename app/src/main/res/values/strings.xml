@@ -55,6 +55,7 @@ Restaurant ausklingen zu lassen. </string>
     <string name="feedback"><u>Bewertung schreiben</u></string>
     <string name="route"><u>Uns finden</u></string>
     <string name="about"><u>Über uns</u></string>
+    <string name="title_activity_route">Map</string>
 
 
 </resources>

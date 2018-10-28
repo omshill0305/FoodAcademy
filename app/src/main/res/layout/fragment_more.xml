@@ -41,148 +41,161 @@
         app:layout_constraintVertical_bias="0.13999999">
 
         <LinearLayout
-            android:id="@+id/galerie"
+            android:id="@+id/galerieL"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:orientation="horizontal">
 
             <ImageView
-                android:id="@+id/imageView"
+                android:id="@+id/bild"
                 android:layout_width="30dip"
                 android:layout_height="30dip"
                 android:contentDescription="@string/gallery"
                 android:src="@mipmap/ic_stat_galery" />
 
-            <TextView
-                android:id="@+id/editText"
+            <Button
+                android:id="@+id/button_gallery"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:ems="10"
+                android:background="@android:color/transparent"
                 android:fontFamily="cursive"
-                android:inputType="textPersonName"
                 android:paddingStart="8dp"
-                android:singleLine="true"
+                android:paddingEnd="8dp"
                 android:text="@string/gallery"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
                 android:textColor="@color/colorAccent"
                 android:textSize="24sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="73dp"
+                tools:layout_editor_absoluteY="358dp" />
 
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/speisekarte"
+            android:id="@+id/menuL"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:orientation="horizontal">
 
             <ImageView
-                android:id="@+id/imageView6"
-                android:layout_width="30dip"
-                android:layout_height="30dip"
-                android:layout_weight="1"
+                android:id="@+id/menu"
+                android:layout_width="31dp"
+                android:layout_height="27dp"
+                android:contentDescription="@string/menu"
                 android:src="@mipmap/ic_stat_menu" />
 
-            <TextView
-                android:id="@+id/editText1"
+            <Button
+                android:id="@+id/button_speisekarte"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:ems="10"
+                android:background="@android:color/transparent"
                 android:fontFamily="cursive"
-                android:inputType="textPersonName"
                 android:paddingStart="8dp"
-                android:singleLine="true"
+                android:paddingEnd="8dp"
                 android:text="@string/menu"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
                 android:textColor="@color/colorAccent"
                 android:textSize="24sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="73dp"
+                tools:layout_editor_absoluteY="358dp" />
 
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/feedback"
+            android:id="@+id/feedbackL"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:orientation="horizontal">
 
             <ImageView
-                android:id="@+id/imageView2"
+                android:id="@+id/feedback"
                 android:layout_width="30dip"
                 android:layout_height="30dip"
+                android:contentDescription="@string/feedback"
                 android:src="@mipmap/ic_stat_feedback" />
 
-            <TextView
-                android:id="@+id/editText2"
+            <Button
+                android:id="@+id/button_feedback"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:ems="10"
+                android:background="@android:color/transparent"
                 android:fontFamily="cursive"
-                android:inputType="textPersonName"
                 android:paddingStart="8dp"
-                android:singleLine="false"
+                android:paddingEnd="8dp"
                 android:text="@string/feedback"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
                 android:textColor="@color/colorAccent"
                 android:textSize="24sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="73dp"
+                tools:layout_editor_absoluteY="358dp" />
 
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/finden"
+            android:id="@+id/findenL"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:orientation="horizontal">
 
             <ImageView
-                android:id="@+id/imageView3"
+                android:id="@+id/route"
                 android:layout_width="30dip"
                 android:layout_height="30dip"
+                android:contentDescription="@string/route"
                 android:src="@drawable/ic_stat_route" />
 
-            <TextView
-                android:id="@+id/editText3"
+            <Button
+                android:id="@+id/button_route"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:ems="10"
+                android:background="@android:color/transparent"
                 android:fontFamily="cursive"
-                android:inputType="textPersonName"
                 android:paddingStart="8dp"
-                android:singleLine="false"
+                android:paddingEnd="8dp"
                 android:text="@string/route"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
                 android:textColor="@color/colorAccent"
                 android:textSize="24sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="73dp"
+                tools:layout_editor_absoluteY="358dp" />
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/about"
+            android:id="@+id/aboutL"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:orientation="horizontal">
 
             <ImageView
-                android:id="@+id/imageView5"
+                android:id="@+id/about"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
+                android:contentDescription="@string/about"
                 android:src="@mipmap/ic_stat_wir" />
 
-            <TextView
-                android:id="@+id/editText5"
+            <Button
+                android:id="@+id/button_about"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:ems="10"
+                android:background="@android:color/transparent"
                 android:fontFamily="cursive"
-                android:inputType="textPersonName"
                 android:paddingStart="8dp"
-                android:singleLine="false"
+                android:paddingEnd="8dp"
                 android:text="@string/about"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
                 android:textColor="@color/colorAccent"
                 android:textSize="24sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="73dp"
+                tools:layout_editor_absoluteY="358dp" />
         </LinearLayout>
 
     </LinearLayout>
