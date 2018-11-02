@@ -20,9 +20,10 @@ public class FeedbackActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                Snackbar.make(view, "Klick hier, um deine Bewertung zu schreiben", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
         });
     }
+
 }

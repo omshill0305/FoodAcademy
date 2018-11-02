@@ -65,7 +65,7 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="color" value="ffffff" />
+                                                <entry key="color" value="13aa37" />
                                                 <entry key="trimmed" value="true" />
                                               </map>
                                             </option>
@@ -77,7 +77,7 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="url" value="jar:file:/Applications/Android%20Studio.app/Contents/plugins/android/lib/android.jar!/images/material_design_icons/maps/ic_local_phone_black_24dp.xml" />
+                                                <entry key="url" value="jar:file:/Applications/Android%20Studio.app/Contents/plugins/android/lib/android.jar!/images/material_design_icons/toggle/ic_star_black_24dp.xml" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -102,7 +102,7 @@
                                       <entry key="cropped" value="true" />
                                       <entry key="iconShape" value="NONE" />
                                       <entry key="imageAsset" value="$USER_HOME$/Downloads/sources/wir.png" />
-                                      <entry key="outputName" value="ic_stat_call" />
+                                      <entry key="outputName" value="ic_stat_star" />
                                     </map>
                                   </option>
                                 </PersistentState>

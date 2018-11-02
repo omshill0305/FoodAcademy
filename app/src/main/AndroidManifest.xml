@@ -38,7 +38,7 @@
 
         <activity
             android:name=".RouteActivity"
-            android:label="@string/title_activity_route" />
+            android:label="@string/more_route" />
 
         <uses-library
             android:name="org.apache.http.legacy"
@@ -48,15 +48,16 @@
             android:name=".GalleryActivity"
             android:label="@string/title_activity_gallery"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".MenuActivity"
-            android:label="@string/more_menu"/>
+        <activity
+            android:name=".MenuActivity"
+            android:label="@string/more_menu" />
+        <activity
+            android:name=".WirActivity"
+            android:label="@string/more_wir" />
         <activity
             android:name=".FeedbackActivity"
-            android:label="@string/title_activity_feedback"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".WirActivity"
-            android:label="@string/more_wir"></activity>
-
+            android:label="@string/more_feedback"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
