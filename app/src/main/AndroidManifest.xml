@@ -48,12 +48,14 @@
             android:name=".GalleryActivity"
             android:label="@string/title_activity_gallery"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".MenuActivity" />
+        <activity android:name=".MenuActivity"
+            android:label="@string/more_menu"/>
         <activity
             android:name=".FeedbackActivity"
             android:label="@string/title_activity_feedback"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".WirActivity"></activity>
+
     </application>
 
 </manifest>
