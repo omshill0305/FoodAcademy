@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 
+import static com.example.olga.foodacademyv2.R.id.button_gallery;
 import static com.example.olga.foodacademyv2.R.id.button_route;
 
 
