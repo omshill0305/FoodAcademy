@@ -38,11 +38,22 @@
 
         <activity
             android:name=".RouteActivity"
-            android:label="@string/title_activity_route"></activity>
+            android:label="@string/title_activity_route" />
 
         <uses-library
             android:name="org.apache.http.legacy"
             android:required="false" />
+
+        <activity
+            android:name=".GalleryActivity"
+            android:label="@string/title_activity_gallery"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".MenuActivity" />
+        <activity
+            android:name=".FeedbackActivity"
+            android:label="@string/title_activity_feedback"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".WirActivity"></activity>
     </application>
 
 </manifest>
