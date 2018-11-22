@@ -12,7 +12,7 @@ import android.widget.Toast;
 public class WriteFeedbackActivity extends AppCompatActivity {
 
     EditText etDatum,etLastName,etFeedback;
-    Button btnAdd,btnView;
+    Button btnAdd;
     DatabaseHelper myDB;
 
     @Override
@@ -25,17 +25,9 @@ public class WriteFeedbackActivity extends AppCompatActivity {
         etLastName = (EditText) findViewById(R.id.etLastName);
 
         btnAdd = (Button) findViewById(R.id.btnAdd);
-        btnView = (Button) findViewById(R.id.btnView);
         myDB = new DatabaseHelper(this);
 
 
-        btnView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(WriteFeedbackActivity.this,FeedbackActivity.class);
-                startActivity(intent);
-            }
-        });
 
         btnAdd.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -48,8 +40,10 @@ public class WriteFeedbackActivity extends AppCompatActivity {
                     etFeedback.setText("");
                     etLastName.setText("");
                     etDatum.setText("");
+                    Intent intent = new Intent(WriteFeedbackActivity.this,FeedbackActivity.class);
+                    startActivity(intent);
                 }else{
-                    Toast.makeText(WriteFeedbackActivity.this,"You must put something in the text field!",Toast.LENGTH_LONG).show();
+                    Toast.makeText(WriteFeedbackActivity.this,"Nicht alle Felder sind ausgefüllt!",Toast.LENGTH_LONG).show();
                 }
             }
         });
@@ -63,9 +57,9 @@ public class WriteFeedbackActivity extends AppCompatActivity {
         boolean insertData = myDB.addData(datum,lastName,feedback);
 
         if(insertData==true){
-            Toast.makeText(WriteFeedbackActivity.this,"Successfully Entered Data!",Toast.LENGTH_LONG).show();
+            Toast.makeText(WriteFeedbackActivity.this,"Deine Bewertung wurde hinzugefügt!",Toast.LENGTH_LONG).show();
         }else{
-            Toast.makeText(WriteFeedbackActivity.this,"Something went wrong :(.",Toast.LENGTH_LONG).show();
+            Toast.makeText(WriteFeedbackActivity.this,"Etwas ist schief gelaufen :(.",Toast.LENGTH_LONG).show();
         }
     }
 }

@@ -43,7 +43,7 @@ public class FeedbackActivity extends AppCompatActivity {
         int numRows = data.getCount();
 
         if(numRows == 0){
-            Toast.makeText(FeedbackActivity.this,"The Database is empty  :(.",Toast.LENGTH_LONG).show();
+            Toast.makeText(FeedbackActivity.this,"Es gibt noch keine Bewertungen  :(.",Toast.LENGTH_LONG).show();
         }else{
             int i=0;
             while(data.moveToNext()){
