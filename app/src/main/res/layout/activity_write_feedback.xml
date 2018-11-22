@@ -8,7 +8,7 @@
     tools:context=".WriteFeedbackActivity">
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/etFirstName"
         android:layout_width="wrap_content"
         android:layout_height="46dp"
         android:layout_marginTop="36dp"
@@ -27,7 +27,25 @@
 
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/etLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_marginTop="8dp"
+        android:autofillHints=""
+        android:background="@color/colorAccent"
+        android:ems="10"
+        android:fontFamily="serif"
+        android:hint="Dein Name"
+        android:inputType="textPersonName"
+        android:textColor="@color/designText"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etFirstName" />
+
+    <EditText
+        android:id="@+id/etFavFood"
         android:layout_width="275dp"
         android:layout_height="193dp"
         android:layout_marginTop="8dp"
@@ -48,9 +66,10 @@
         android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText"
-        app:layout_constraintVertical_bias="0.175" />
+        app:layout_constraintTop_toBottomOf="@+id/etFirstName"
+        app:layout_constraintVertical_bias="0.313" />
 
     <Button
         android:id="@+id/btnAdd"
@@ -72,6 +91,22 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText4" />
+        app:layout_constraintTop_toBottomOf="@+id/etFavFood" />
+
+    <Button
+        android:id="@+id/btnView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnAdd"
+        app:layout_constraintHorizontal_bias="0.312"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etFavFood"
+        app:layout_constraintVertical_bias="0.231" />
 
 </android.support.constraint.ConstraintLayout>
