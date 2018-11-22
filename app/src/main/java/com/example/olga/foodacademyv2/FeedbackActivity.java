@@ -20,6 +20,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class FeedbackActivity extends AppCompatActivity {
@@ -55,6 +56,7 @@ public class FeedbackActivity extends AppCompatActivity {
                 i++;
             }
             ThreeColumn_ListAdapter adapter =  new ThreeColumn_ListAdapter(this,R.layout.list_adapter_view, userList);
+            Collections.reverse(userList);
             listView = (ListView) findViewById(R.id.listView);
             listView.setAdapter(adapter);
         }

@@ -28,6 +28,7 @@ public class ThreeColumn_ListAdapter extends ArrayAdapter<User> {
 
         User user = users.get(position);
 
+
         if (user != null) {
             TextView datum = (TextView) convertView.findViewById(R.id.textDatum);
             TextView lastName = (TextView) convertView.findViewById(R.id.textLastName);
