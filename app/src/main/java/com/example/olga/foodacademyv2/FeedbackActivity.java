@@ -25,48 +25,38 @@ import java.util.List;
 public class FeedbackActivity extends AppCompatActivity {
 
     DatabaseHelper myDB;
+    ArrayList<User> userList;
+    ListView listView;
+    User user;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_feedback);
 
-        ListView listView = (ListView) findViewById(R.id.listView);
+
+
         myDB = new DatabaseHelper(this);
 
-        //populate an ArrayList<String> from the database and then view it
-        ArrayList<String> theList = new ArrayList<>();
+        userList = new ArrayList<>();
         Cursor data = myDB.getListContents();
-        if(data.getCount() == 0){
-            Toast.makeText(this, "There are no contents in this list!",Toast.LENGTH_LONG).show();
+        int numRows = data.getCount();
+
+        if(numRows == 0){
+            Toast.makeText(FeedbackActivity.this,"The Database is empty  :(.",Toast.LENGTH_LONG).show();
         }else{
+            int i=0;
             while(data.moveToNext()){
-                theList.add(data.getString(1));
-                ListAdapter listAdapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,theList)
 
-
-                {
-                    @Override
-                    public View getView(int position, View convertView, ViewGroup parent){
-                    // Get the Item from ListView
-                    View view = super.getView(position, convertView, parent);
-
-                    // Initialize a TextView for ListView each Item
-                    TextView tv = (TextView) view.findViewById(android.R.id.text1);
-
-                    // Set the text color of TextView (ListView Item)
-                    tv.setTextColor(Color.WHITE);
-
-
-                    // Generate ListView Item using TextView
-                    return view;
-                }
-                };
-                
-
-
-                listView.setAdapter(listAdapter);
+                user = new User(data.getString(1),data.getString(2),data.getString(3));
+                userList.add(i,user);
+                System.out.println(data.getString(1)+" "+data.getString(2)+" "+data.getString(3));
+                System.out.println(userList.get(i).getFirstName());
+                i++;
             }
+            ThreeColumn_ListAdapter adapter =  new ThreeColumn_ListAdapter(this,R.layout.list_adapter_view, userList);
+            listView = (ListView) findViewById(R.id.listView);
+            listView.setAdapter(adapter);
         }
         
 

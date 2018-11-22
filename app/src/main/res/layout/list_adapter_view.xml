@@ -10,19 +10,22 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="33"
-        android:text="TextView" />
+        android:text="TextView"
+        android:textColor="@color/colorAccent" />
 
     <TextView
         android:id="@+id/textLastName"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="33"
-        android:text="TextView" />
+        android:text="TextView"
+        android:textColor="@color/colorAccent" />
 
     <TextView
         android:id="@+id/textFavFood"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="33"
-        android:text="TextView" />
+        android:text="TextView"
+        android:textColor="@color/colorAccent" />
 </LinearLayout>
