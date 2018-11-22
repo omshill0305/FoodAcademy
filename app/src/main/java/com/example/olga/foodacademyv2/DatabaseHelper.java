@@ -6,17 +6,15 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-/**
- * Created by Mitch on 2016-05-13.
- */
+
 public class DatabaseHelper extends SQLiteOpenHelper {
 
-    public static final String DATABASE_NAME = "users.db";
+    public static final String DATABASE_NAME = "users2.db";
     public static final String TABLE_NAME = "users_data";
     public static final String COL1 = "ID";
-    public static final String COL2 = "FIRSTNAME";
+    public static final String COL2 = "DATUM";
     public static final String COL3 = "LASTNAME";
-    public static final String COL4 = "FAVFOOD";
+    public static final String COL4 = "FEEDBACK";
 
 
     public DatabaseHelper(Context context) {
@@ -26,7 +24,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         String createTable = "CREATE TABLE " + TABLE_NAME + " (ID INTEGER PRIMARY KEY AUTOINCREMENT, " +
-                " FIRSTNAME TEXT, LASTNAME TEXT, FAVFOOD TEXT)";
+                " DATUM TEXT, LASTNAME TEXT, FEEDBACK TEXT)";
         db.execSQL(createTable);
     }
 
@@ -36,12 +34,12 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         onCreate(db);
     }
 
-    public boolean addData(String fName, String lName, String fFood) {
+    public boolean addData(String datum, String lName, String feedback) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
-        contentValues.put(COL2, fName);
+        contentValues.put(COL2, datum);
         contentValues.put(COL3, lName);
-        contentValues.put(COL4, fFood);
+        contentValues.put(COL4, feedback);
 
         long result = db.insert(TABLE_NAME, null, contentValues);
 

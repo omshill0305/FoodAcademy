@@ -1,22 +1,22 @@
 package com.example.olga.foodacademyv2;
 
 public class User {
-    private String FirstName;
+    private String Datum;
     private String LastName;
-    private String FavFood;
+    private String Feedback;
 
     public User(String fName,String lName, String fFood){
-        FirstName = fName;
+        Datum = fName;
         LastName = lName;
-        FavFood = fFood;
+        Feedback = fFood;
     }
 
-    public String getFirstName() {
-        return FirstName;
+    public String getDatum() {
+        return Datum;
     }
 
-    public void setFirstName(String firstName) {
-        FirstName = firstName;
+    public void setDatum(String datum) {
+        Datum = datum;
     }
 
     public String getLastName() {
@@ -27,11 +27,11 @@ public class User {
         LastName = lastName;
     }
 
-    public String getFavFood() {
-        return FavFood;
+    public String getFeedback() {
+        return Feedback;
     }
 
-    public void setFavFood(String favFood) {
-        FavFood = favFood;
+    public void setFeedback(String feedback) {
+        Feedback = feedback;
     }
 }

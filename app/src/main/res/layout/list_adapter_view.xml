@@ -6,7 +6,7 @@
     android:weightSum="100">
 
     <TextView
-        android:id="@+id/textFirstName"
+        android:id="@+id/textDatum"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="33"
@@ -22,7 +22,7 @@
         android:textColor="@color/colorAccent" />
 
     <TextView
-        android:id="@+id/textFavFood"
+        android:id="@+id/textFeedback"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="33"

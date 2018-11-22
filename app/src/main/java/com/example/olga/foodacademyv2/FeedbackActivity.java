@@ -51,7 +51,7 @@ public class FeedbackActivity extends AppCompatActivity {
                 user = new User(data.getString(1),data.getString(2),data.getString(3));
                 userList.add(i,user);
                 System.out.println(data.getString(1)+" "+data.getString(2)+" "+data.getString(3));
-                System.out.println(userList.get(i).getFirstName());
+                System.out.println(userList.get(i).getDatum());
                 i++;
             }
             ThreeColumn_ListAdapter adapter =  new ThreeColumn_ListAdapter(this,R.layout.list_adapter_view, userList);

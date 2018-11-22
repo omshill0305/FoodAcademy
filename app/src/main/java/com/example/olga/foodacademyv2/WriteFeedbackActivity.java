@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 public class WriteFeedbackActivity extends AppCompatActivity {
 
-    EditText etFirstName,etLastName,etFavFood;
+    EditText etDatum,etLastName,etFeedback;
     Button btnAdd,btnView;
     DatabaseHelper myDB;
 
@@ -20,8 +20,8 @@ public class WriteFeedbackActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_write_feedback);
 
-        etFavFood = (EditText) findViewById(R.id.etFavFood);
-        etFirstName = (EditText) findViewById(R.id.etFirstName);
+        etFeedback = (EditText) findViewById(R.id.etFeedback);
+        etDatum = (EditText) findViewById(R.id.etDatum);
         etLastName = (EditText) findViewById(R.id.etLastName);
 
         btnAdd = (Button) findViewById(R.id.btnAdd);
@@ -40,14 +40,14 @@ public class WriteFeedbackActivity extends AppCompatActivity {
         btnAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String fName = etFirstName.getText().toString();
+                String fName = etDatum.getText().toString();
                 String lName = etLastName.getText().toString();
-                String fFood = etFavFood.getText().toString();
+                String fFood = etFeedback.getText().toString();
                 if(fName.length() != 0 && lName.length() != 0 && fFood.length() != 0){
                     AddData(fName,lName, fFood);
-                    etFavFood.setText("");
+                    etFeedback.setText("");
                     etLastName.setText("");
-                    etFirstName.setText("");
+                    etDatum.setText("");
                 }else{
                     Toast.makeText(WriteFeedbackActivity.this,"You must put something in the text field!",Toast.LENGTH_LONG).show();
                 }
@@ -59,8 +59,8 @@ public class WriteFeedbackActivity extends AppCompatActivity {
 
     }
 
-    public void AddData(String firstName,String lastName, String favFood ){
-        boolean insertData = myDB.addData(firstName,lastName,favFood);
+    public void AddData(String datum,String lastName, String feedback ){
+        boolean insertData = myDB.addData(datum,lastName,feedback);
 
         if(insertData==true){
             Toast.makeText(WriteFeedbackActivity.this,"Successfully Entered Data!",Toast.LENGTH_LONG).show();
