@@ -18,7 +18,7 @@ import java.util.regex.Pattern;
 public class WriteFeedbackActivity extends AppCompatActivity {
 
     DatabaseHelper myDB;
-    Button btnAdd,btnView;
+    Button btnAdd;
     EditText editText;
 
     @Override
@@ -26,9 +26,8 @@ public class WriteFeedbackActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_write_feedback);
 
-        editText = (EditText) findViewById(R.id.editText);
+        editText = (EditText) findViewById(R.id.editText4);
         btnAdd = (Button) findViewById(R.id.btnAdd);
-        btnView = (Button) findViewById(R.id.btnView);
         myDB = new DatabaseHelper(this);
 
         btnAdd.setOnClickListener(new View.OnClickListener() {
@@ -38,19 +37,18 @@ public class WriteFeedbackActivity extends AppCompatActivity {
                 if(editText.length()!= 0){
                     AddData(newEntry);
                     editText.setText("");
+                    Intent intent = new Intent(WriteFeedbackActivity.this, FeedbackActivity.class);
+                    startActivity(intent);
+
                 }else{
                     Toast.makeText(WriteFeedbackActivity.this, "You must put something in the text field!", Toast.LENGTH_LONG).show();
                 }
+
+
             }
         });
 
-        btnView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(WriteFeedbackActivity.this, FeedbackActivity.class);
-                startActivity(intent);
-            }
-        });
+
 
 
     }
