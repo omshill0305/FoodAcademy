@@ -19,6 +19,7 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.PolygonOptions;
 import com.google.android.gms.maps.model.Polyline;
@@ -76,6 +77,11 @@ public class RouteActivity extends AppCompatActivity implements OnMapReadyCallba
             return;
         }
         mMap.setMyLocationEnabled(true);
+        LatLng RESTAURANT = new LatLng(52.4921794, 13.2931579);
+        Marker restaurant = mMap.addMarker(new MarkerOptions().position(RESTAURANT).title("FoodAcademy"));
+        restaurant.showInfoWindow();
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(RESTAURANT, 15));
+
         mMap.setOnMapLongClickListener(new GoogleMap.OnMapLongClickListener() {
             @Override
             public void onMapLongClick(LatLng latLng) {
@@ -95,9 +101,10 @@ public class RouteActivity extends AppCompatActivity implements OnMapReadyCallba
 
                 } else {
                    // add second marker
-                    markerOptions.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED));
+                    //markerOptions.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE));
                 }
                 mMap.addMarker(markerOptions);
+
 
                 if (listPoints.size() == 2){
                 // create the URL to get request from first marker to second marker
