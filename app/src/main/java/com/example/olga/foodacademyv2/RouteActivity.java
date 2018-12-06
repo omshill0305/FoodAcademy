@@ -77,10 +77,7 @@ public class RouteActivity extends AppCompatActivity implements OnMapReadyCallba
             return;
         }
         mMap.setMyLocationEnabled(true);
-        LatLng RESTAURANT = new LatLng(52.4921794, 13.2931579);
-        Marker restaurant = mMap.addMarker(new MarkerOptions().position(RESTAURANT).title("FoodAcademy"));
-        restaurant.showInfoWindow();
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(RESTAURANT, 15));
+        setRestaurant();
 
         mMap.setOnMapLongClickListener(new GoogleMap.OnMapLongClickListener() {
             @Override
@@ -89,20 +86,16 @@ public class RouteActivity extends AppCompatActivity implements OnMapReadyCallba
                 if(listPoints.size() == 2){
                     listPoints.clear();
                     mMap.clear();
+                    setRestaurant();
                 }
+
                 //save first point select
                 listPoints.add(latLng);
                 //create marker
                 MarkerOptions markerOptions = new MarkerOptions();
                 markerOptions.position(latLng);
-                if (listPoints.size() == 1){
-                    //add first marker to the map
-                    markerOptions.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN));
-
-                } else {
-                   // add second marker
-                    //markerOptions.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE));
-                }
+                //add first marker to the map
+                markerOptions.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN));
                 mMap.addMarker(markerOptions);
 
 
@@ -124,6 +117,14 @@ public class RouteActivity extends AppCompatActivity implements OnMapReadyCallba
         //LatLng restaurant = new LatLng(52.4921794, 13.2931579);
         //mMap.addMarker(new MarkerOptions().position(restaurant).title("FoodAcademy"));
         //mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(restaurant, 15));
+    }
+
+    private void setRestaurant() {
+        LatLng RESTAURANT = new LatLng(52.4921794, 13.2931579);
+        final Marker restaurant = mMap.addMarker(new MarkerOptions().position(RESTAURANT).title("FoodAcademy"));
+        restaurant.showInfoWindow();
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(RESTAURANT, 15));
+        listPoints.add(RESTAURANT);
     }
 
     private String getRequestUrl(LatLng origin, LatLng dest) {
