@@ -196,6 +196,19 @@ Restaurant ausklingen zu lassen. </string>
     </string>
 
     <string name="write_feedback">Bewertung schreiben</string>
+    <string name="wir_name">Food Academy</string>
+    <string name="wir_adresse">Friedrichsruher Str. 22 · 14193 Berlin</string>
+    <string name="wir_phone">  +49 92 08 / 2 89</string>
+    <string name="wir_mail">food-academy@t-online.de</string>
+
+
+    <string name="wir_text">
+
+        "Berliner Gemütlichkeit und elegantes Flair inmitten schöner Natur:"
+        "In unserem Restaurant können Sie Feste feiern und gutes Essen und Wein genießen."
+
+
+    </string>
 
 
 </resources>
