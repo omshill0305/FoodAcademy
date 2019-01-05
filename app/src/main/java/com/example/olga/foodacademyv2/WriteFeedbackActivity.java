@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 public class WriteFeedbackActivity extends AppCompatActivity {
 
-    EditText etDatum,etLastName,etFeedback;
+    EditText etDatum, etLastName, etFeedback;
     Button btnAdd;
     DatabaseHelper myDB;
 
@@ -25,41 +25,45 @@ public class WriteFeedbackActivity extends AppCompatActivity {
         etLastName = (EditText) findViewById(R.id.etLastName);
 
         btnAdd = (Button) findViewById(R.id.btnAdd);
+
         myDB = new DatabaseHelper(this);
-
-
 
         btnAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String fName = etDatum.getText().toString();
-                String lName = etLastName.getText().toString();
-                String fFood = etFeedback.getText().toString();
-                if(fName.length() != 0 && lName.length() != 0 && fFood.length() != 0){
-                    AddData(fName,lName, fFood);
+                String date = etDatum.getText().toString();
+                String lastName = etLastName.getText().toString();
+                String feedback = etFeedback.getText().toString();
+                Intent intent = new Intent(WriteFeedbackActivity.this, FeedbackActivity.class);
+                if (checkFeedback(lastName, date, feedback)) {
+                    AddData(date, lastName, feedback);
                     etFeedback.setText("");
                     etLastName.setText("");
                     etDatum.setText("");
-                    Intent intent = new Intent(WriteFeedbackActivity.this,FeedbackActivity.class);
                     startActivity(intent);
-                }else{
+                } else {
                     Toast.makeText(WriteFeedbackActivity.this,"Nicht alle Felder sind ausgefüllt!",Toast.LENGTH_LONG).show();
                 }
             }
         });
-
-
-
-
     }
 
-    public void AddData(String datum,String lastName, String feedback ){
-        boolean insertData = myDB.addData(datum,lastName,feedback);
+    public boolean checkFeedback(String lastName, String date, String feedback) {
+        if (date.length() != 0 && lastName.length() != 0 && feedback.length() != 0){
+            return true;
+        } else {
+            return false;
+        }
+    }
 
-        if(insertData==true){
+    public boolean AddData(String datum, String lastName, String feedback){
+        boolean insertData = myDB.addData(datum, lastName, feedback);
+
+        if (insertData == true) {
             Toast.makeText(WriteFeedbackActivity.this,"Deine Bewertung wurde hinzugefügt!",Toast.LENGTH_LONG).show();
-        }else{
+        } else {
             Toast.makeText(WriteFeedbackActivity.this,"Etwas ist schief gelaufen :(.",Toast.LENGTH_LONG).show();
         }
+        return insertData;
     }
 }
