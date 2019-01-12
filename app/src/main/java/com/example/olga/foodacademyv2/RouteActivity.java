@@ -127,6 +127,8 @@ public class RouteActivity extends AppCompatActivity implements OnMapReadyCallba
         listPoints.add(RESTAURANT);
     }
 
+    //method getRequestUrl to get full url to request direction from google map API
+
     private String getRequestUrl(LatLng origin, LatLng dest) {
         //value of origin
         String str_orig = "origin=" + origin.latitude + "," + origin.longitude;
@@ -143,11 +145,11 @@ public class RouteActivity extends AppCompatActivity implements OnMapReadyCallba
         //create url to request
         String url = "https://maps.googleapis.com/maps/api/directions/" + output + "?" + param;
 
-        System.out.print("jakob" + url);
+        System.out.print("olga" + url);
         return  url;
 
     }
-
+        //method requestDirections to get direction, using httpurlconnection
     private String requestDirection(String reqUrl) throws IOException {
         String responseString = "";
         InputStream inputStream = null;
@@ -195,7 +197,7 @@ public class RouteActivity extends AppCompatActivity implements OnMapReadyCallba
                break;
         }
     }
-
+    //AsyncTask to call request Direction
     public class TaskRequestDirection extends AsyncTask<String, Void, String>{
 
         @Override
@@ -218,7 +220,7 @@ public class RouteActivity extends AppCompatActivity implements OnMapReadyCallba
             taskParser.execute(s);
         }
     }
-
+        //AsyncTask to parse json response result
     public class TaskParser extends AsyncTask<String, Void, List<List<HashMap<String, String>>> >{
 
         @Override
